@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -38,6 +39,12 @@ function App() {
       </header>
 
       {/* Route : 작성해주세요. */}
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/services" element={<Services/>}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+      </Routes>
 
       {/* SECTION 1 : 건들지마세요. */}
       <section className="w-full h-[100vh] bg-red-500 flex items-center justify-center">

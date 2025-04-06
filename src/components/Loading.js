@@ -1,6 +1,9 @@
 import React from "react";
+import { useRecoilState } from "recoil";
+import { loadingState } from "../store";
 
 const Loading = () => {
+  const [loading, setLoading] = useRecoilState(loadingState);
   return (
     <div className="relative h-screen w-full">
       {/* 프로그레스 바 */}
